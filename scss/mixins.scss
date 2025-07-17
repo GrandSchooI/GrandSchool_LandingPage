@@ -1,0 +1,17 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin btnSettings {
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
