@@ -1,0 +1,25 @@
+# Системные файлы macOS и Windows
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Vite/React
+dist/
+.vite/
+
+# Переменные окружения
+.env
+.env.*
+
+# Логи
+*.log
+
+# IDE и редакторы
+.idea/
+.vscode/
+
+# Кэш и временные файлы
+.cache/
+tmp/
