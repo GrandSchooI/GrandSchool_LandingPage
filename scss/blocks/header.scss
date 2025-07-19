@@ -3,8 +3,8 @@ header {
   top: 0;
   width: 100%;
   .headerWrapper {
+    padding-top: 35px;
     @include flex;
-    padding: 35px 0 0;
     .logo {
       display: flex;
       align-items: center;

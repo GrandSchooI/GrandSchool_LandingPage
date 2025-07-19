@@ -377,7 +377,7 @@ body {
   width: 95%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0 44px;
+  padding: 0 25px;
 }
 
 /* Animation */
@@ -455,10 +455,10 @@ header {
   width: 100%;
 }
 header .headerWrapper {
+  padding-top: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0 0;
 }
 header .headerWrapper .logo {
   display: flex;
@@ -497,10 +497,12 @@ header .headerWrapper .helpBtn:hover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 .hero .heroTitle {
+  margin: 0;
   line-height: 60px;
   font-size: 45px;
   font-weight: 600;
@@ -533,6 +535,14 @@ header .headerWrapper .helpBtn:hover {
 .hero .changeCourse:hover {
   background-color: #618135;
   color: white;
+}
+
+.courseBlock {
+  padding: 100px 70px;
+}
+.courseBlock h2 {
+  font-weight: 600;
+  font-size: 36px;
 }
 
 /*# sourceMappingURL=styles.css.map */
