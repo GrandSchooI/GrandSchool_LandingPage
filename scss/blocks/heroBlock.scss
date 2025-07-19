@@ -1,21 +1,19 @@
-.heroSection {
-  @include column;
+.hero {
   background-image: image-set(
     url("../img/background.webp") 1x,
     url("../img/backgroundRetina.webp") 2x
   );
   background-size: cover;
-  background-position: 25% 50%;
+  background-position: 65%;
   background-repeat: no-repeat;
-  padding-top: 35px;
   min-height: 100vh;
-}
 
-.hero {
-  @include column;
-  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
   .heroTitle {
-    margin: 125px 0 0 0;
     line-height: 60px;
     font-size: 45px;
     font-weight: 600;
@@ -28,7 +26,7 @@
     margin-top: 10px;
     font-size: 22px;
     font-weight: 400;
-    width: 55%;
+    width: 45%;
     line-height: 30px;
     color: #484747;
   }
