@@ -538,11 +538,37 @@ header .headerWrapper .helpBtn:hover {
 }
 
 .courseBlock {
-  padding: 100px 70px;
+  padding-top: 100px;
 }
 .courseBlock h2 {
   font-weight: 600;
   font-size: 36px;
+}
+.courseBlock .courseBlockInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 35px 0;
+}
+.courseBlock .courseBlockInfo p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 141%;
+}
+.courseBlock .courseBlockInfo .buyAll {
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 233px;
+  height: 64px;
+  background-color: #e0684e;
+  color: #fff;
+  border: 2px solid #e0684e;
+}
+.courseBlock .courseBlockInfo .buyAll:hover {
+  background-color: #fff;
+  color: #e0684e;
 }
 
 /*# sourceMappingURL=styles.css.map */

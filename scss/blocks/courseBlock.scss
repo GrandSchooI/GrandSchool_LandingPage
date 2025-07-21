@@ -1,7 +1,28 @@
 .courseBlock {
-  padding: 100px 70px;
+  padding-top: 100px;
   h2 {
     font-weight: 600;
     font-size: 36px;
+  }
+  .courseBlockInfo {
+    @include flex;
+    padding: 15px 0 35px 0;
+    p {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 141%;
+    }
+    .buyAll {
+      @include btnSettings;
+      width: 233px;
+      height: 64px;
+      background-color: #e0684e;
+      color: #fff;
+      border: 2px solid #e0684e;
+      &:hover {
+        background-color: #fff;
+        color: #e0684e;
+      }
+    }
   }
 }
