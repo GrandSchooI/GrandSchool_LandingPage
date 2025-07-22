@@ -1,0 +1,48 @@
+.hero {
+  background-image: image-set(
+    url("../img/background.webp") 1x,
+    url("../img/backgroundRetina.webp") 2x
+  );
+  background-size: cover;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  .heroTitle {
+    margin: 0;
+    line-height: 60px;
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    .greenTitle {
+      color: #618135;
+    }
+  }
+  .heroSubtitle {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 45%;
+    line-height: 30px;
+    color: #484747;
+  }
+  .changeCourse {
+    @include btnSettings;
+    width: 259px;
+    height: 64px;
+    font-size: 20px;
+    color: #618135;
+    background-color: transparent;
+    border: 2px solid #618135;
+    margin-top: 43px;
+    &:hover {
+      background-color: #618135;
+      color: #ffff;
+    }
+  }
+}
