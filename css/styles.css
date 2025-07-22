@@ -538,24 +538,28 @@ header .headerWrapper .helpBtn:hover {
 }
 
 .courseBlock {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
 }
 .courseBlock h2 {
   font-weight: 600;
   font-size: 36px;
 }
-.courseBlock .courseBlockInfo {
+.courseBlock .courses {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0 35px 0;
 }
-.courseBlock .courseBlockInfo p {
+.courseBlock .courses p {
   font-size: 22px;
   font-weight: 400;
   line-height: 141%;
+  color: #484747;
 }
-.courseBlock .courseBlockInfo .buyAll {
+.courseBlock .courses .buyAll {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -566,9 +570,165 @@ header .headerWrapper .helpBtn:hover {
   color: #fff;
   border: 2px solid #e0684e;
 }
-.courseBlock .courseBlockInfo .buyAll:hover {
+.courseBlock .courses .buyAll:hover {
   background-color: #fff;
   color: #e0684e;
+}
+
+.card1 {
+  width: 30%;
+  border-radius: 25px;
+}
+.card1 .courseTitle {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #f7f5ec;
+  border-radius: 25px 25px 0 0;
+  padding: 15px 20px;
+  margin: 0;
+}
+.card1 .indent {
+  padding: 20px;
+}
+.card1 .courseImg {
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+.card1 .freeLessonBtn {
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  height: 43px;
+  border: 2px solid #f7f5ec;
+  text-align: center;
+  background-color: #f7f5ec;
+  color: #618135;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card1 .freeLessonBtn:hover {
+  color: #f7f5ec;
+  background-color: #618135;
+  border: 2px solid #618135;
+}
+.card1 h3 {
+  margin: 30px 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card1 ul {
+  padding: 0 20px;
+  position: relative;
+}
+.card1 ul .aboutCourse {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+.card1 ul .aboutCourse::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: 2px;
+  top: 4px;
+  position: absolute;
+  background-color: #ff3f15;
+  border-radius: 50%;
+}
+.card1 ul .courseDuration {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  list-style-type: none;
+}
+.card1 .liSection {
+  padding: 0 20px;
+  margin-bottom: 46px;
+}
+.card1 .liSection .punkts {
+  line-height: 20px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.coursePrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coursePrice h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff3f15;
+}
+.coursePrice h3 span {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+.coursePrice .price {
+  font-size: 34px;
+  font-weight: 700;
+  color: #ff3f15;
+}
+
+.courseButtons {
+  gap: 20px;
+  display: flex;
+}
+.courseButtons .presentBtn {
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 195px;
+  height: 51px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #f7f5ec;
+  color: #618135;
+  border: 2px solid #618135;
+}
+.courseButtons .presentBtn:hover {
+  background-color: #618135;
+  color: #f7f5ec;
+}
+.courseButtons .buyBtn {
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 195px;
+  height: 51px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #618135;
+  color: #f7f5ec;
+  border: 2px solid #618135;
+}
+.courseButtons .buyBtn:hover {
+  background-color: #f7f5ec;
+  color: #618135;
+}
+
+.course-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card2 {
+  display: flex;
+  width: 60%;
 }
 
 /*# sourceMappingURL=styles.css.map */
