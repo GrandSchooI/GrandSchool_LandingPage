@@ -537,40 +537,39 @@ header .headerWrapper .helpBtn:hover {
   color: white;
 }
 
-.available-courses {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
+.courses {
+  padding: 100px 0 0 0;
 }
-.available-courses h2 {
-  font-weight: 600;
+.courses h2 {
   font-size: 36px;
+  font-family: 600;
+  margin: 0 0 20px 0;
 }
-.available-courses .courses {
+.courses .coursesSubtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 35px 0;
 }
-.available-courses .courses p {
+.courses .coursesSubtitle p {
   font-size: 22px;
   font-weight: 400;
-  line-height: 141%;
   color: #484747;
+  line-height: 141%;
 }
-.available-courses .courses .buyAll {
+.courses .coursesSubtitle .buyAll {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  width: 233px;
-  height: 64px;
   background-color: #e0684e;
   color: #fff;
   border: 2px solid #e0684e;
+  width: 233px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.available-courses .courses .buyAll:hover {
+.courses .coursesSubtitle .buyAll:hover {
   background-color: #fff;
   color: #e0684e;
 }

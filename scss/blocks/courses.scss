@@ -1,0 +1,31 @@
+.courses {
+  padding: 100px 0 0 0;
+  h2 {
+    font-size: 36px;
+    font-family: 600;
+    margin: 0 0 20px 0;
+  }
+  .coursesSubtitle {
+    @include flex;
+    p {
+      font-size: 22px;
+      font-weight: 400;
+      color: #484747;
+      line-height: 141%;
+    }
+    .buyAll {
+      @include btnSettings;
+      background-color: #e0684e;
+      color: #fff;
+      border: 2px solid #e0684e;
+      width: 233px;
+      height: 64px;
+      font-size: 20px;
+      font-weight: 600;
+      &:hover {
+        background-color: #fff;
+        color: #e0684e;
+      }
+    }
+  }
+}
