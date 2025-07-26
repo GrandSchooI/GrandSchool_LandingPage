@@ -126,9 +126,13 @@
                 y2="276.817"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="white" />
-                <stop offset="0.1377" stopColor="white" stopOpacity="0.8761" />
-                <stop offset="1" stopColor="white" stopOpacity="0.1" />
+                <stop offset="0%" stop-color="white" />
+                <stop
+                  offset="0.1377"
+                  stop-color="white"
+                  stop-opacity="0.8761"
+                />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
               </linearGradient>
               <radialGradient
                 id="paint1_radial"
@@ -138,8 +142,8 @@
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(451.174 414.871) scale(21.7874)"
               >
-                <stop stopColor="white" />
-                <stop offset="1" stopColor="white" stopOpacity="0.1" />
+                <stop offset="0%" stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
               </radialGradient>
             </defs>
           </svg>
@@ -196,7 +200,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <h1 class="heroTitle fadeInUp">
             Online kursy komputerowe <br />
@@ -208,10 +212,24 @@
           <button class="changeCourse fadeIn">Wybrać kurs</button>
         </div>
       </section>
-      <section class="courseBlock container">
-        <h2>Dostępnę Kursy</h2>
-        <p></p>
+      <section class="courses" id="courses">
+        <div class="container">
+          <h2>Dostępnę Kursy</h2>
+          <div class="coursesSubtitle">
+            <p>
+              Wybierz kurs, który ci odpowiada - we własnym tempie, <br />
+              ze zrozumiałym wyjaśniniem i wsparciem na każdym kroku.
+            </p>
+            <button class="buyAll">Kupić wszystko</button>
+          </div>
+        </div>
       </section>
+      <section class="video" id="video"></section>
+      <section class="projectSupport" id="projectSupport"></section>
+      <section class="techSkills" id="techSkills"></section>
+      <section class="projectStats" id="projectStats"></section>
+      <section class="testimonials" id="testimonials"></section>
+      <footer class="footer"></footer>
     </main>
   </body>
 </html>
