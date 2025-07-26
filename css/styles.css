@@ -489,6 +489,11 @@ header .headerWrapper .helpBtn:hover {
   color: #618135;
 }
 
+.footer {
+  background-image: image-set(url("../img/footerbg.png") 1x, url("../img/footerbgretina.png") 2x);
+  background-size: cover;
+}
+
 .hero {
   background-image: image-set(url("../img/background.webp") 1x, url("../img/backgroundRetina.webp") 2x);
   background-size: cover;
