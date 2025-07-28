@@ -9,7 +9,6 @@
   );
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
   display: flex;
   padding: 0 0 30px 0;
   p {
@@ -56,15 +55,23 @@
     font-weight: 400;
     color: #fff;
     padding: 2px 0;
+    font-style: normal;
   }
   a {
     text-decoration: none;
+    font-weight: 400;
+    color: #fff;
   }
 }
 
-.followUs {
-  a {
-    text-decoration: none;
-    margin: 0 15px 0 0;
+.iconList {
+  display: flex;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      margin: 0 15px 0 0;
+      display: flex;
+    }
   }
 }
