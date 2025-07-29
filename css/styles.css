@@ -494,10 +494,11 @@ header .headerWrapper .helpBtn:hover {
   background-image: image-set(url("../img/footerbg.webp") 1x, url("../img/footerbgretina.webp") 2x);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 30%;
   display: flex;
   padding: 0 0 30px 0;
 }
-.footer p {
+.footer .copyright {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -506,7 +507,6 @@ header .headerWrapper .helpBtn:hover {
 .footer .footerInfo {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 65%;
   padding: 35px 0;
 }
@@ -523,7 +523,7 @@ header .headerWrapper .helpBtn:hover {
   font-weight: 700;
   color: #fff;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .footerSubtitle::before {
   content: "";
@@ -531,20 +531,27 @@ header .headerWrapper .helpBtn:hover {
   width: 44px;
   height: 2px;
   background-color: #fff;
-  top: 25px;
+  top: 30px;
 }
 
 .contact .contactInfo {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
-  padding: 2px 0;
   font-style: normal;
+  margin: 0 0 10px 0;
 }
 .contact a {
   text-decoration: none;
   font-weight: 400;
   color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.contact a:hover {
+  color: #b2b2b2;
 }
 
 .iconList {
@@ -557,6 +564,14 @@ header .headerWrapper .helpBtn:hover {
   text-decoration: none;
   margin: 0 15px 0 0;
   display: flex;
+}
+
+.icon {
+  transition: all 0.3s ease;
+  fill: #fff;
+}
+.icon:hover {
+  fill: #b2b2b2;
 }
 
 .hero {
