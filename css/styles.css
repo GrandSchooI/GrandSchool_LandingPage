@@ -542,7 +542,7 @@ header .headerWrapper .helpBtn:hover {
   margin: 0 0 10px 0;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
 }
 .contact .emailLink {
   text-decoration: none;
