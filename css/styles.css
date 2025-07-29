@@ -540,8 +540,11 @@ header .headerWrapper .helpBtn:hover {
   color: #fff;
   font-style: normal;
   margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
-.contact a {
+.contact .emailLink {
   text-decoration: none;
   font-weight: 400;
   color: #fff;
@@ -550,7 +553,7 @@ header .headerWrapper .helpBtn:hover {
   align-items: center;
   gap: 7px;
 }
-.contact a:hover {
+.contact .emailLink:hover {
   color: #b2b2b2;
 }
 
