@@ -580,9 +580,26 @@ header .headerWrapper .helpBtn:hover {
   display: flex;
 }
 
+.locationIcon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+}
+
+.mailLinkIcon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+}
+.mailLinkIcon:hover {
+  fill: #b2b2b2;
+}
+
 .icon {
   transition: all 0.3s ease;
   fill: #fff;
+  width: 45px;
+  height: 46px;
 }
 .icon:hover {
   fill: #b2b2b2;
