@@ -463,13 +463,17 @@ header .headerWrapper {
 header .headerWrapper .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   width: 175px;
   transition: all 1s ease;
 }
 header .headerWrapper .logo:hover .computerLight, header .headerWrapper .logo:focus-visible .computerLight {
   -webkit-animation: blink-1 0.6s both;
   animation: blink-1 0.6s both;
+}
+header .headerWrapper .logo .logoText {
+  width: 95px;
+  height: 38px;
 }
 header .headerWrapper .helpBtn {
   border-radius: 50px;
