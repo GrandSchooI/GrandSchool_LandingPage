@@ -8,7 +8,7 @@ header {
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
       width: 175px;
       transition: all 1s ease;
       &:hover .computerLight,
@@ -16,20 +16,29 @@ header {
         -webkit-animation: blink-1 0.6s both;
         animation: blink-1 0.6s both;
       }
-    }
-    .helpBtn {
-      @include btnSettings;
-      text-decoration: none;
-      padding: 15px 40px;
-      font-size: 20px;
-      color: #ffff;
-      border: 2px solid #618135;
-      background-color: #618135;
-      display: none;
-      &:hover {
-        background-color: #ffff;
-        color: #618135;
+      .logoText {
+        width: 95px;
+        height: 38px;
       }
     }
+  }
+}
+
+.ctaButton {
+  @include btnSettings;
+  font-size: 20px;
+  min-width: 200px;
+  padding: 15px 60px;
+  color: #ffff;
+  border: 2px solid #618135;
+  background-color: #618135;
+  &:hover {
+    background-color: #72a62b;
+    border: 2px solid #72a62b;
+    color: #fff;
+    text-decoration: underline;
+  }
+  &:active {
+    background-color: #517322;
   }
 }
