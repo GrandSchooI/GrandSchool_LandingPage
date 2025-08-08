@@ -475,22 +475,27 @@ header .headerWrapper .logo .logoText {
   width: 95px;
   height: 38px;
 }
-header .headerWrapper .helpBtn {
+
+.ctaButton {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 15px 60px;
   font-size: 20px;
   color: white;
   border: 2px solid #618135;
   background-color: #618135;
-  display: none;
 }
-header .headerWrapper .helpBtn:hover {
-  background-color: white;
-  color: #618135;
+.ctaButton:hover {
+  background-color: #72a62b;
+  border: 2px solid #72a62b;
+  color: #fff;
+  text-decoration: underline;
+}
+.ctaButton:active {
+  background-color: #517322;
 }
 
 .footer {
@@ -624,29 +629,12 @@ header .headerWrapper .helpBtn:hover {
   color: #32477c;
 }
 .hero .heroSubtitle {
-  margin-top: 10px;
+  margin: 10px 0 52px 0;
   font-size: 22px;
   font-weight: 400;
   width: 45%;
   line-height: 30px;
   color: #484747;
-}
-.hero .changeCourse {
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  width: 259px;
-  height: 64px;
-  font-size: 20px;
-  color: #618135;
-  background-color: transparent;
-  border: 2px solid #618135;
-  margin-top: 43px;
-}
-.hero .changeCourse:hover {
-  background-color: #618135;
-  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

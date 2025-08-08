@@ -21,19 +21,23 @@ header {
         height: 38px;
       }
     }
-    .helpBtn {
-      @include btnSettings;
-      text-decoration: none;
-      padding: 15px 40px;
-      font-size: 20px;
-      color: #ffff;
-      border: 2px solid #618135;
-      background-color: #618135;
-      display: none;
-      &:hover {
-        background-color: #ffff;
-        color: #618135;
-      }
-    }
+  }
+}
+
+.ctaButton {
+  @include btnSettings;
+  padding: 15px 60px;
+  font-size: 20px;
+  color: #ffff;
+  border: 2px solid #618135;
+  background-color: #618135;
+  &:hover {
+    background-color: #72a62b;
+    border: 2px solid #72a62b;
+    color: #fff;
+    text-decoration: underline;
+  }
+  &:active {
+    background-color: #517322;
   }
 }
