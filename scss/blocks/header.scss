@@ -26,8 +26,9 @@ header {
 
 .ctaButton {
   @include btnSettings;
-  padding: 15px 60px;
   font-size: 20px;
+  min-width: 200px;
+  padding: 15px 60px;
   color: #ffff;
   border: 2px solid #618135;
   background-color: #618135;
