@@ -24,7 +24,7 @@ header {
   }
 }
 
-.ctaButton {
+.primaryBtn {
   @include btnSettings;
   font-size: 20px;
   min-width: 200px;

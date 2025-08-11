@@ -476,7 +476,7 @@ header .headerWrapper .logo .logoText {
   height: 38px;
 }
 
-.ctaButton {
+.primaryBtn {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -490,13 +490,13 @@ header .headerWrapper .logo .logoText {
   border: 2px solid #618135;
   background-color: #618135;
 }
-.ctaButton:hover {
+.primaryBtn:hover {
   background-color: #72a62b;
   border: 2px solid #72a62b;
   color: #fff;
   text-decoration: underline;
 }
-.ctaButton:active {
+.primaryBtn:active {
   background-color: #517322;
 }
 
