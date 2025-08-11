@@ -491,10 +491,10 @@ header .headerWrapper .logo .logoText {
   border: 2px solid #618135;
   background-color: #618135;
 }
-.primaryBtn .primaryBtn-link-description {
+.primaryBtn span {
   position: relative;
 }
-.primaryBtn .primaryBtn-link-description::after {
+.primaryBtn span::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -510,14 +510,14 @@ header .headerWrapper .logo .logoText {
   background-color: #72a62b;
   border: 2px solid #72a62b;
 }
-.primaryBtn:hover .primaryBtn-link-description::after, .primaryBtn:focus .primaryBtn-link-description::after {
+.primaryBtn:hover span::after, .primaryBtn:focus span::after {
   width: 100%;
 }
 .primaryBtn:active {
   background-color: #517322;
   border: 2px solid #618135;
 }
-.primaryBtn:active .primaryBtn-link-description::after {
+.primaryBtn:active span::after {
   transform: skaleX(0);
   width: 0%;
 }

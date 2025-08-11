@@ -33,7 +33,7 @@ header {
   color: #ffff;
   border: 2px solid #618135;
   background-color: #618135;
-  .primaryBtn-link-description {
+  span {
     position: relative;
     &::after {
       content: "";
@@ -52,14 +52,14 @@ header {
   &:focus {
     background-color: #72a62b;
     border: 2px solid #72a62b;
-    .primaryBtn-link-description::after {
+    span::after {
       width: 100%;
     }
   }
   &:active {
     background-color: #517322;
     border: 2px solid #618135;
-    .primaryBtn-link-description::after {
+    span::after {
       transform: skaleX(0);
       width: 0%;
     }
