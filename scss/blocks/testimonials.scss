@@ -1,0 +1,27 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 183px 0 144px 0;
+  background-color: #f7f5ec;
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonialsList {
+    margin-top: 34px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      background-color: #fff;
+    }
+  }
+}
