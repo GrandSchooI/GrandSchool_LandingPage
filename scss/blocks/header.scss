@@ -26,19 +26,42 @@ header {
 
 .primaryBtn {
   @include btnSettings;
+  position: relative;
   font-size: 20px;
   min-width: 200px;
   padding: 15px 60px;
   color: #ffff;
   border: 2px solid #618135;
   background-color: #618135;
-  &:hover {
+  .primaryBtn-link-description {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 0%;
+      top: 18px;
+      height: 1px;
+      transition: all 0.4s ease;
+      transform: translateX(-50%);
+      transform-origin: top;
+      background-color: #fff;
+    }
+  }
+  &:hover,
+  &:focus {
     background-color: #72a62b;
     border: 2px solid #72a62b;
-    color: #fff;
-    text-decoration: underline;
+    .primaryBtn-link-description::after {
+      width: 100%;
+    }
   }
   &:active {
     background-color: #517322;
+    border: 2px solid #618135;
+    .primaryBtn-link-description::after {
+      transform: skaleX(0);
+      width: 0%;
+    }
   }
 }

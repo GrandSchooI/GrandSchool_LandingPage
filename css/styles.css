@@ -483,6 +483,7 @@ header .headerWrapper .logo .logoText {
   transition: all 0.4s ease;
   text-decoration: none;
   text-align: center;
+  position: relative;
   font-size: 20px;
   min-width: 200px;
   padding: 15px 60px;
@@ -490,14 +491,35 @@ header .headerWrapper .logo .logoText {
   border: 2px solid #618135;
   background-color: #618135;
 }
-.primaryBtn:hover {
+.primaryBtn .primaryBtn-link-description {
+  position: relative;
+}
+.primaryBtn .primaryBtn-link-description::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  top: 18px;
+  height: 1px;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+  transform-origin: top;
+  background-color: #fff;
+}
+.primaryBtn:hover, .primaryBtn:focus {
   background-color: #72a62b;
   border: 2px solid #72a62b;
-  color: #fff;
-  text-decoration: underline;
+}
+.primaryBtn:hover .primaryBtn-link-description::after, .primaryBtn:focus .primaryBtn-link-description::after {
+  width: 100%;
 }
 .primaryBtn:active {
   background-color: #517322;
+  border: 2px solid #618135;
+}
+.primaryBtn:active .primaryBtn-link-description::after {
+  transform: skaleX(0);
+  width: 0%;
 }
 
 .footer {
