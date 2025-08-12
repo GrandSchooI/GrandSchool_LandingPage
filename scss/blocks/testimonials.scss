@@ -10,7 +10,8 @@
     font-weight: 600;
     text-align: center;
   }
-  svg {
+  .fullLogo {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +25,6 @@
     justify-content: center;
     li {
       background-color: #fff;
-      max-width: 400px;
       padding: 20px;
       border-radius: 10px;
       .testText {
@@ -46,13 +46,14 @@
     width: 98px;
     height: 98px;
   }
-  p {
+  strong {
     line-height: 141%;
     font-weight: 700;
     font-size: 18px;
     color: #484747;
     span {
       font-weight: 400;
+      display: block;
     }
   }
 }

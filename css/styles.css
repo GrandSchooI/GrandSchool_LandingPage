@@ -674,7 +674,8 @@ header .headerWrapper .logo .logoText {
   font-weight: 600;
   text-align: center;
 }
-.testimonials svg {
+.testimonials .fullLogo {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -689,7 +690,6 @@ header .headerWrapper .logo .logoText {
 }
 .testimonials .testList li {
   background-color: #fff;
-  max-width: 400px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -710,14 +710,15 @@ header .headerWrapper .logo .logoText {
   width: 98px;
   height: 98px;
 }
-.testUsers p {
+.testUsers strong {
   line-height: 141%;
   font-weight: 700;
   font-size: 18px;
   color: #484747;
 }
-.testUsers p span {
+.testUsers strong span {
   font-weight: 400;
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
