@@ -680,7 +680,7 @@ header .headerWrapper .logo .logoText {
   justify-content: center;
   align-items: center;
 }
-.testimonials .testList {
+.testimonials .testimonialsList {
   width: 100%;
   margin-top: 34px;
   list-style-type: none;
@@ -688,12 +688,12 @@ header .headerWrapper .logo .logoText {
   gap: 34px;
   justify-content: center;
 }
-.testimonials .testList li {
+.testimonials .testimonialsList li {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
 }
-.testimonials .testList li .testText {
+.testimonials .testimonialsList li .testimonialsText {
   font-size: 18px;
   font-weight: 400;
   color: #484747;
@@ -701,22 +701,22 @@ header .headerWrapper .logo .logoText {
   margin: 9px 0 32px 0;
 }
 
-.testUsers {
+.testimonialsUsers {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.testUsers img {
+.testimonialsUsers img {
   width: 98px;
   height: 98px;
 }
-.testUsers strong {
+.testimonialsUsers strong {
   line-height: 141%;
   font-weight: 700;
   font-size: 18px;
   color: #484747;
 }
-.testUsers strong span {
+.testimonialsUsers strong span {
   font-weight: 400;
   display: block;
 }
