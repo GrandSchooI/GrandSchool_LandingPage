@@ -1,0 +1,59 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 183px 0 144px 0;
+  background-color: #f7f5ec;
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .fullLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonialsList {
+    width: 100%;
+    margin-top: 34px;
+    list-style-type: none;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+    li {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      .testimonialsText {
+        font-size: 18px;
+        font-weight: 400;
+        color: #484747;
+        line-height: 141%;
+        margin: 9px 0 32px 0;
+      }
+    }
+  }
+}
+
+.testimonialsUsers {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 98px;
+    height: 98px;
+  }
+  strong {
+    line-height: 141%;
+    font-weight: 700;
+    font-size: 18px;
+    color: #484747;
+    span {
+      font-weight: 400;
+      display: block;
+    }
+  }
+}
