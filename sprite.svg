@@ -314,4 +314,15 @@
 </linearGradient>
 </defs>
 </symbol>
+<symbol id="figures" viewBox="0 0 72 72">
+<g clip-path="url(#clip0_2376_2485)">
+<path d="M-0.845703 9V63L26.1543 36V9H-0.845703Z" fill="#618135"/>
+<path d="M44.1543 9V63L71.1543 36V9H44.1543Z" fill="#618135"/>
+</g>
+<defs>
+<clipPath id="clip0_2376_2485">
+<rect width="71.95" height="72" fill="white"/>
+</clipPath>
+</defs>
+</symbol>
  </svg>

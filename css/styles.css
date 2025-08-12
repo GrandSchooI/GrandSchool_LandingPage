@@ -679,14 +679,45 @@ header .headerWrapper .logo .logoText {
   justify-content: center;
   align-items: center;
 }
-.testimonials .testimonialsList {
+.testimonials .testList {
+  width: 100%;
   margin-top: 34px;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  gap: 34px;
+  justify-content: center;
 }
-.testimonials .testimonialsList li {
+.testimonials .testList li {
   background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.testimonials .testList li .testText {
+  font-size: 18px;
+  font-weight: 400;
+  color: #484747;
+  line-height: 141%;
+  margin: 9px 0 32px 0;
+}
+
+.testUsers {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testUsers img {
+  width: 98px;
+  height: 98px;
+}
+.testUsers p {
+  line-height: 141%;
+  font-weight: 700;
+  font-size: 18px;
+  color: #484747;
+}
+.testUsers p span {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
