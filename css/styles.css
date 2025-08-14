@@ -533,22 +533,34 @@ header .headerWrapper .logo .logoText {
 }
 
 @media (max-width: 560px) {
-  .headerWrapper .primaryBtn {
+  header .container {
+    padding: 25px 15px;
+  }
+  header .headerWrapper .primaryBtn {
     padding: 14px 49px;
     font-size: 18px;
     min-width: 163px;
   }
-  .headerWrapper .logo {
+  header .headerWrapper .logo {
     width: 141px;
     height: 52px;
   }
-  .headerWrapper .logo .logoIcon {
+  header .headerWrapper .logo .logoIcon {
     width: 52px;
     height: 52px;
   }
-  .headerWrapper .logo .logoText {
-    width: 80px;
+  header .headerWrapper .logo .logoText {
     height: 52px;
+  }
+}
+@media (max-width: 370px) {
+  header .container {
+    padding: 25px 10px;
+  }
+  header .headerWrapper .primaryBtn {
+    padding: 12px 36px;
+    font-size: 18px;
+    min-width: 150px;
   }
 }
 .footer {
@@ -770,7 +782,22 @@ header .headerWrapper .logo .logoText {
   .hero .container .heroSubtitle {
     font-size: 18px;
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 370px) {
+  .hero .container {
+    padding: 0 10px;
+  }
+  .hero .container .heroTitle {
+    font-size: 25px;
+  }
+  .hero .container .heroSubtitle {
+    font-size: 16px;
+  }
+  .hero .container .primaryBtn {
+    padding: 14px 40px;
+    min-width: 180px;
   }
 }
 .testimonials {

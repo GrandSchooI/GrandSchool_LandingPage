@@ -136,7 +136,25 @@
       .heroSubtitle {
         font-size: 18px;
         width: 100%;
-        margin-bottom: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .hero {
+    .container {
+      padding: 0 10px;
+      .heroTitle {
+        font-size: 25px;
+      }
+      .heroSubtitle {
+        font-size: 16px;
+      }
+      .primaryBtn {
+        padding: 14px 40px;
+        min-width: 180px;
       }
     }
   }

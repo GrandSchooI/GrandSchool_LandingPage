@@ -71,22 +71,40 @@ header {
 }
 
 @media (max-width: 560px) {
-  .headerWrapper {
-    .primaryBtn {
-      padding: 14px 49px;
-      font-size: 18px;
-      min-width: 163px;
+  header {
+    .container {
+      padding: 25px 15px;
     }
-    .logo {
-      width: 141px;
-      height: 52px;
-      .logoIcon {
-        width: 52px;
-        height: 52px;
+    .headerWrapper {
+      .primaryBtn {
+        padding: 14px 49px;
+        font-size: 18px;
+        min-width: 163px;
       }
-      .logoText {
-        width: 80px;
+      .logo {
+        width: 141px;
         height: 52px;
+        .logoIcon {
+          width: 52px;
+          height: 52px;
+        }
+        .logoText {
+          height: 52px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  header {
+    .container {
+      padding: 25px 10px;
+    }
+    .headerWrapper {
+      .primaryBtn {
+        padding: 12px 36px;
+        font-size: 18px;
+        min-width: 150px;
       }
     }
   }
