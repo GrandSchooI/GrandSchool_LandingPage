@@ -69,3 +69,10 @@ body {
   margin: 0 auto;
   padding: 0 25px;
 }
+
+@media (max-width: 1050px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
