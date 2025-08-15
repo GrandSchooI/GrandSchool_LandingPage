@@ -719,16 +719,15 @@ header .headerWrapper .logo .logoText {
     line-height: 25px;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
   .hero {
-    background-image: image-set(url("../img/mobileBg.png") 1x, url("../img/mobileBgRetina.png") 2x);
+    background-image: image-set(url("../img/mobileBg.webp") 1x, url("../img/mobileBgRetina.webp") 2x);
     background-size: cover;
-    background-position-y: 57%;
+    background-position-y: 60%;
     background-repeat: no-repeat;
-    align-items: center;
     justify-content: flex-start;
+    padding-top: 200px;
     width: 100%;
-    padding-top: 140px;
   }
   .hero .container {
     justify-content: center;
@@ -746,6 +745,9 @@ header .headerWrapper .logo .logoText {
   }
 }
 @media (max-width: 915px) {
+  .hero {
+    padding-top: 150px;
+  }
   .hero .heroTitle {
     width: 55%;
   }
@@ -772,6 +774,9 @@ header .headerWrapper .logo .logoText {
   }
 }
 @media (max-width: 560px) {
+  .hero {
+    padding-top: 120px;
+  }
   .hero .container {
     padding: 0 15px;
   }

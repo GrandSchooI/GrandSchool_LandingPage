@@ -59,19 +59,18 @@
     }
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
   .hero {
     background-image: image-set(
-      url("../img/mobileBg.png") 1x,
-      url("../img/mobileBgRetina.png") 2x
+      url("../img/mobileBg.webp") 1x,
+      url("../img/mobileBgRetina.webp") 2x
     );
     background-size: cover;
-    background-position-y: 57%;
+    background-position-y: 60%;
     background-repeat: no-repeat;
-    align-items: center;
     justify-content: flex-start;
+    padding-top: 200px;
     width: 100%;
-    padding-top: 140px;
     .container {
       justify-content: center;
       align-items: center;
@@ -90,6 +89,7 @@
 }
 @media (max-width: 915px) {
   .hero {
+    padding-top: 150px;
     .heroTitle {
       width: 55%;
     }
@@ -127,6 +127,7 @@
 
 @media (max-width: 560px) {
   .hero {
+    padding-top: 120px;
     .container {
       padding: 0 15px;
       .heroTitle {
