@@ -734,40 +734,6 @@ header .headerWrapper .logo .logoText {
     min-height: 90vh;
   }
 }
-.hero {
-  background-image: image-set(url("../img/background.webp") 1x, url("../img/backgroundRetina.webp") 2x);
-  background-size: cover;
-  background-position: 65%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-.hero .heroTitle {
-  margin: 0;
-  line-height: 60px;
-  font-size: 45px;
-  font-weight: 600;
-  color: black;
-}
-.hero .heroTitle .greenTitle {
-  color: #618135;
-}
-.hero .heroTitle .blueTitle {
-  color: #32477c;
-}
-.hero .heroSubtitle {
-  margin: 10px 0 52px 0;
-  font-size: 22px;
-  font-weight: 400;
-  width: 45%;
-  line-height: 30px;
-  color: #484747;
-}
-
 .testimonials {
   display: flex;
   flex-direction: column;
