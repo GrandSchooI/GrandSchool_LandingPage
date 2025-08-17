@@ -1,0 +1,46 @@
+.projectSupport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0 16px 0;
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+    width: 100%;
+    text-align: center;
+  }
+  .supportGreenTitle {
+    display: block;
+    color: #618135;
+  }
+  .supportList {
+    width: 100%;
+    margin-top: 34px;
+    list-style-type: none;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+    li {
+      width: 33%;
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 28px 0 24px 0;
+      }
+      p {
+        line-height: 130%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .block {
+        display: block;
+      }
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
