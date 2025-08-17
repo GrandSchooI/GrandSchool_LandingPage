@@ -782,7 +782,7 @@ header .headerWrapper .logo .logoText {
   width: 100%;
 }
 .hero .heroTitle {
-  width: 50%;
+  width: 55%;
   margin: 0;
   line-height: 60px;
   font-size: 45px;
@@ -806,17 +806,18 @@ header .headerWrapper .logo .logoText {
 
 @media (max-width: 1200px) {
   .hero .heroTitle {
+    width: 50%;
     font-size: 40px;
     line-height: 50px;
   }
 }
 @media (max-width: 1050px) {
   .hero .heroTitle {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 40px;
   }
   .hero .heroSubtitle {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 25px;
   }
 }
@@ -827,7 +828,7 @@ header .headerWrapper .logo .logoText {
     background-position-y: 60%;
     background-repeat: no-repeat;
     justify-content: flex-start;
-    padding-top: 200px;
+    padding-top: 230px;
     width: 100%;
   }
   .hero .container {
@@ -838,40 +839,47 @@ header .headerWrapper .logo .logoText {
     gap: 16px;
   }
   .hero .container .heroTitle {
+    line-height: 141%;
     text-align: center;
+    font-size: 43px;
+    width: 60%;
   }
   .hero .container .heroSubtitle {
+    line-height: 141%;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 25px;
+    width: 65%;
   }
 }
 @media (max-width: 915px) {
   .hero {
-    padding-top: 150px;
+    padding-top: 200px;
   }
-  .hero .heroTitle {
-    width: 55%;
+  .hero .container .heroTitle {
+    font-size: 40px;
+    width: 75%;
   }
 }
 @media (max-width: 835px) {
-  .hero .heroTitle {
-    width: 65%;
+  .hero {
+    padding-top: 180px;
+  }
+  .hero .container .heroSubtitle {
+    width: 80%;
   }
 }
-@media (max-width: 740px) {
-  .hero .heroTitle {
-    width: 75%;
+@media (max-width: 780px) {
+  .hero {
+    padding-top: 170px;
   }
-  .hero .heroSubtitle {
-    width: 55%;
+  .hero .container .heroTitle {
+    width: 80%;
+    font-size: 35px;
   }
-}
-@media (max-width: 625px) {
-  .hero .heroTitle {
-    width: 85%;
-  }
-  .hero .heroSubtitle {
-    width: 65%;
+  .hero .container .heroSubtitle {
+    width: 80%;
+    font-size: 20px;
   }
 }
 @media (max-width: 560px) {
