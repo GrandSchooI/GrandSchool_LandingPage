@@ -902,17 +902,18 @@ header .headerWrapper .logo .logoText {
   .hero .heroSubtitle {
     font-size: 16px;
   }
-  .hero .primaryBtn {
+  .hero .buyCourseBtn {
     padding: 14px 40px;
     min-width: 180px;
   }
 }
 @media (min-width: 1024px) and (max-height: 600px) {
   .hero {
-    background-position-y: 55%;
+    background-position-y: 65%;
     align-items: center;
     justify-content: flex-start;
     padding-top: 120px;
+    min-height: 140vh;
   }
   .hero article {
     align-items: flex-start;
