@@ -662,13 +662,17 @@ header .headerWrapper .logo .logoText {
 }
 
 .projectSupport {
+  background-image: image-set(url("../img/supportVector1.webp") 1x, url("../img/supportVector1Retina.webp") 3x);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0 16px 0;
+  padding: 200px 0 220px 0;
 }
-.projectSupport h3 {
+.projectSupport h2 {
   font-size: 36px;
   font-weight: 600;
   line-height: 130%;
@@ -691,7 +695,7 @@ header .headerWrapper .logo .logoText {
 .supportList li {
   width: 33%;
 }
-.supportList li h5 {
+.supportList li h3 {
   font-size: 24px;
   font-weight: 600;
   margin: 28px 0 24px 0;
@@ -719,18 +723,18 @@ header .headerWrapper .logo .logoText {
   }
 }
 @media (max-width: 768px) {
-  .projectSupport h3 {
+  .projectSupport h2 {
     font-size: 30px;
   }
   .supportList li {
     width: 100%;
   }
-  .supportList li h5 {
+  .supportList li h3 {
     font-weight: 700;
   }
 }
 @media (max-width: 365px) {
-  .projectSupport h3 {
+  .projectSupport h2 {
     font-size: 25px;
   }
 }
