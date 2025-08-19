@@ -380,6 +380,11 @@ body {
   padding: 0 25px;
 }
 
+@media (max-width: 370px) {
+  .container {
+    padding: 0;
+  }
+}
 /* Animation */
 @-webkit-keyframes blink-1 {
   0%, 50%, 100% {
@@ -527,9 +532,6 @@ header .headerWrapper .logo .logoText {
 }
 
 @media (max-width: 560px) {
-  header .container {
-    padding: 25px 15px;
-  }
   header .headerWrapper .primaryBtn {
     padding: 14px 49px;
     font-size: 18px;
@@ -548,9 +550,6 @@ header .headerWrapper .logo .logoText {
   }
 }
 @media (max-width: 370px) {
-  header .container {
-    padding: 25px 10px;
-  }
   header .headerWrapper .primaryBtn {
     padding: 12px 36px;
     font-size: 18px;
@@ -720,24 +719,20 @@ header .headerWrapper .logo .logoText {
     background-size: cover;
     background-position-y: 60%;
     background-repeat: no-repeat;
+    align-items: center;
     justify-content: flex-start;
     padding-top: 230px;
     width: 100%;
-  }
-  .hero .container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 16px;
+    flex-direction: column;
   }
-  .hero .container .heroTitle {
+  .hero .heroTitle {
     line-height: 141%;
     text-align: center;
     font-size: 43px;
     width: 60%;
   }
-  .hero .container .heroSubtitle {
+  .hero .heroSubtitle {
     line-height: 141%;
     text-align: center;
     margin-bottom: 10px;
@@ -749,7 +744,7 @@ header .headerWrapper .logo .logoText {
   .hero {
     padding-top: 200px;
   }
-  .hero .container .heroTitle {
+  .hero .heroTitle {
     font-size: 40px;
     width: 75%;
   }
@@ -758,7 +753,7 @@ header .headerWrapper .logo .logoText {
   .hero {
     padding-top: 180px;
   }
-  .hero .container .heroSubtitle {
+  .hero .heroSubtitle {
     width: 80%;
   }
 }
@@ -766,11 +761,11 @@ header .headerWrapper .logo .logoText {
   .hero {
     padding-top: 170px;
   }
-  .hero .container .heroTitle {
+  .hero .heroTitle {
     width: 80%;
     font-size: 35px;
   }
-  .hero .container .heroSubtitle {
+  .hero .heroSubtitle {
     width: 80%;
     font-size: 20px;
   }
@@ -779,30 +774,24 @@ header .headerWrapper .logo .logoText {
   .hero {
     padding-top: 120px;
   }
-  .hero .container {
-    padding: 0 15px;
-  }
-  .hero .container .heroTitle {
+  .hero .heroTitle {
     font-size: 28px;
     width: 100%;
   }
-  .hero .container .heroSubtitle {
+  .hero .heroSubtitle {
     font-size: 18px;
     width: 100%;
     margin: 0;
   }
 }
 @media (max-width: 370px) {
-  .hero .container {
-    padding: 0 10px;
-  }
-  .hero .container .heroTitle {
+  .hero .heroTitle {
     font-size: 25px;
   }
-  .hero .container .heroSubtitle {
+  .hero .heroSubtitle {
     font-size: 16px;
   }
-  .hero .container .primaryBtn {
+  .hero .primaryBtn {
     padding: 14px 40px;
     min-width: 180px;
   }
