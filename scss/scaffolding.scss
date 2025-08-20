@@ -70,8 +70,9 @@ body {
   padding: 0 25px;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 560px) {
   .container {
-    padding: 0;
+    width: 100%;
+    padding: 0 15px;
   }
 }
