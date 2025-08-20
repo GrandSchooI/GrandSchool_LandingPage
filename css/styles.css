@@ -380,6 +380,12 @@ body {
   padding: 0 25px;
 }
 
+@media (max-width: 560px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 /* Animation */
 @-webkit-keyframes blink-1 {
   0%, 50%, 100% {
@@ -471,6 +477,10 @@ header .headerWrapper .logo:hover .computerLight, header .headerWrapper .logo:fo
   -webkit-animation: blink-1 0.6s both;
   animation: blink-1 0.6s both;
 }
+header .headerWrapper .logo .logoIcon {
+  width: 63px;
+  height: 63px;
+}
 header .headerWrapper .logo .logoText {
   width: 95px;
   height: 38px;
@@ -501,7 +511,7 @@ header .headerWrapper .logo .logoText {
   width: 0%;
   top: 18px;
   height: 1px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   transform: translateX(-50%);
   transform-origin: top;
   background-color: #fff;
@@ -522,6 +532,31 @@ header .headerWrapper .logo .logoText {
   width: 0%;
 }
 
+@media (max-width: 560px) {
+  header .headerWrapper .buyCourseBtn {
+    padding: 14px 49px;
+    font-size: 18px;
+    min-width: 163px;
+  }
+  header .headerWrapper .logo {
+    width: 141px;
+    height: 52px;
+  }
+  header .headerWrapper .logo .logoIcon {
+    width: 52px;
+    height: 52px;
+  }
+  header .headerWrapper .logo .logoText {
+    height: 52px;
+  }
+}
+@media (max-width: 370px) {
+  header .headerWrapper .buyCourseBtn {
+    padding: 12px 36px;
+    font-size: 18px;
+    min-width: 150px;
+  }
+}
 .footer {
   background-image: -webkit-image-set(url("../img/footerbg.webp") 1x, url("../img/footerbgretina.webp") 2x);
   background-image: image-set(url("../img/footerbg.webp") 1x, url("../img/footerbgretina.webp") 2x);
@@ -640,6 +675,7 @@ header .headerWrapper .logo .logoText {
   width: 100%;
 }
 .hero .heroTitle {
+  width: 55%;
   margin: 0;
   line-height: 60px;
   font-size: 45px;
@@ -661,6 +697,129 @@ header .headerWrapper .logo .logoText {
   color: #484747;
 }
 
+@media (max-width: 1200px) {
+  .hero .heroTitle {
+    width: 50%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1050px) {
+  .hero .heroTitle {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .hero .heroSubtitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1025px) {
+  .hero {
+    background-image: image-set(url("../img/mobileBg.webp") 1x, url("../img/mobileBgRetina.webp") 2x);
+    background-size: cover;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 230px;
+  }
+  .hero .heroAdapt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .hero .heroTitle {
+    line-height: 141%;
+    text-align: center;
+    font-size: 43px;
+    width: 60%;
+  }
+  .hero .heroSubtitle {
+    line-height: 141%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 65%;
+  }
+}
+@media (max-width: 915px) {
+  .hero {
+    padding-top: 200px;
+  }
+  .hero .heroTitle {
+    font-size: 40px;
+    width: 75%;
+  }
+}
+@media (max-width: 835px) {
+  .hero {
+    padding-top: 180px;
+  }
+  .hero .heroSubtitle {
+    width: 80%;
+  }
+}
+@media (max-width: 780px) {
+  .hero {
+    padding-top: 170px;
+  }
+  .hero .heroTitle {
+    width: 80%;
+    font-size: 35px;
+  }
+  .hero .heroSubtitle {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .hero .heroTitle {
+    font-size: 28px;
+    width: 100%;
+  }
+  .hero .heroSubtitle {
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 370px) {
+  .hero .heroTitle {
+    font-size: 25px;
+  }
+  .hero .heroSubtitle {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) and (max-height: 600px) {
+  .hero {
+    background-position-y: 65%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    min-height: 140vh;
+  }
+  .hero .heroAdapt {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero .heroTitle {
+    text-align: left;
+    width: 70%;
+  }
+  .hero .heroSubtitle {
+    text-align: left;
+    font-size: 24px;
+    width: 50%;
+  }
+}
 .testimonials {
   display: flex;
   flex-direction: column;

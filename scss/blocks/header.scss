@@ -16,6 +16,10 @@ header {
         -webkit-animation: blink-1 0.6s both;
         animation: blink-1 0.6s both;
       }
+      .logoIcon {
+        width: 63px;
+        height: 63px;
+      }
       .logoText {
         width: 95px;
         height: 38px;
@@ -42,7 +46,7 @@ header {
       width: 0%;
       top: 18px;
       height: 1px;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       transform: translateX(-50%);
       transform-origin: top;
       background-color: #fff;
@@ -62,6 +66,40 @@ header {
     span::after {
       transform: skaleX(0);
       width: 0%;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    .headerWrapper {
+      .buyCourseBtn {
+        padding: 14px 49px;
+        font-size: 18px;
+        min-width: 163px;
+      }
+      .logo {
+        width: 141px;
+        height: 52px;
+        .logoIcon {
+          width: 52px;
+          height: 52px;
+        }
+        .logoText {
+          height: 52px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  header {
+    .headerWrapper {
+      .buyCourseBtn {
+        padding: 12px 36px;
+        font-size: 18px;
+        min-width: 150px;
+      }
     }
   }
 }
