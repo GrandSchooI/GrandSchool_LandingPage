@@ -662,15 +662,16 @@ header .headerWrapper .logo .logoText {
 }
 
 .projectSupport {
-  background-image: image-set(url("../img/supportVector1.webp") 1x, url("../img/supportVector1Retina.webp") 3x);
-  background-size: cover;
+  background-image: -webkit-image-set(url("../img/supportVector1.webp") 1x, url("../img/supportVector1Retina.webp") 2x);
+  background-image: image-set(url("../img/supportVector1.webp") 1x, url("../img/supportVector1Retina.webp") 2x);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0 220px 0;
+  padding: 200px 0;
 }
 .projectSupport h2 {
   font-size: 36px;
