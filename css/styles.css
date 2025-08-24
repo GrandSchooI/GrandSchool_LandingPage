@@ -695,15 +695,19 @@ header .headerWrapper .logo .logoText {
     width: 70%;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 540px) {
   .footer {
+    position: relative;
     min-height: 85vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position-y: 95%;
   }
   .footer .footerInfo .footerText {
     width: 100%;
     font-size: 18px;
+  }
+  .footer .copyright {
+    position: absolute;
+    bottom: 12px;
   }
   .footerSubtitle {
     font-size: 18px;
@@ -723,19 +727,11 @@ header .headerWrapper .logo .logoText {
   .footer {
     min-height: 75vh;
     background-position-y: 100%;
-    position: relative;
-  }
-  .footer .copyright {
-    position: absolute;
-    bottom: 15px;
   }
 }
 @media (max-width: 375px) {
   .footer {
     min-height: 90vh;
-  }
-  .footer .copyright {
-    bottom: 12px;
   }
 }
 .hero {

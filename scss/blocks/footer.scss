@@ -195,16 +195,20 @@
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 540px) {
   .footer {
+    position: relative;
     min-height: 85vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position-y: 95%;
     .footerInfo {
       .footerText {
         width: 100%;
         font-size: 18px;
       }
+    }
+    .copyright {
+      position: absolute;
+      bottom: 12px;
     }
   }
   .footerSubtitle {
@@ -228,19 +232,11 @@
   .footer {
     min-height: 75vh;
     background-position-y: 100%;
-    position: relative;
-    .copyright {
-      position: absolute;
-      bottom: 15px;
-    }
   }
 }
 
 @media (max-width: 375px) {
   .footer {
     min-height: 90vh;
-    .copyright {
-      bottom: 12px;
-    }
   }
 }
