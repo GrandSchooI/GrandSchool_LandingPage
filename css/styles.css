@@ -647,9 +647,8 @@ header .headerWrapper .logo .logoText {
 }
 @media (max-width: 910px) {
   .footer {
-    background-image: image-set(url("../img/footerMobileBg.webp") 1x, url("../img/footerMobileRetinaBg.webp") 2x);
-    background-position-y: 55%;
-    min-height: 700px;
+    min-height: 40vh;
+    background-position-x: 92%;
   }
   .footer .footerInfo {
     width: 100%;
@@ -658,16 +657,19 @@ header .headerWrapper .logo .logoText {
   }
   .footer .footerInfo .footerText {
     font-size: 22px;
-    width: 60%;
+    width: 55%;
   }
-  .footer .footerInfo .copyright {
-    font-size: 16px;
+  .footer .copyright {
+    font-size: 14px;
   }
   .footerSubtitle {
     margin: 44px 0 35px 0;
     font-size: 20px;
   }
   .contact .contactInfo {
+    font-size: 18px;
+  }
+  .contact .emailLink {
     font-size: 18px;
   }
   .hideTitle {
@@ -678,6 +680,62 @@ header .headerWrapper .logo .logoText {
   }
   .iconList li a {
     margin: 0 28px 0 0;
+  }
+}
+@media (max-width: 755px) {
+  .footer {
+    background-image: image-set(url("../img/footerMobile.webp") 1x, url("../img/footerMobileRetina.webp") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 600px) {
+  .footer .footerInfo .footerText {
+    width: 70%;
+  }
+}
+@media (max-width: 530px) {
+  .footer {
+    min-height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footer .footerInfo .footerText {
+    width: 100%;
+    font-size: 18px;
+  }
+  .footerSubtitle {
+    font-size: 18px;
+    margin: 44px 0 12px 0;
+  }
+  .footerSubtitle::before {
+    display: none;
+  }
+  .contact .contactInfo {
+    font-size: 16px;
+  }
+  .contact .emailLink {
+    font-size: 16px;
+  }
+}
+@media (max-width: 470px) {
+  .footer {
+    min-height: 75vh;
+    background-position-y: 100%;
+    position: relative;
+  }
+  .footer .copyright {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    min-height: 90vh;
+  }
+  .footer .copyright {
+    bottom: 12px;
   }
 }
 .hero {
