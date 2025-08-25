@@ -569,7 +569,6 @@ header .headerWrapper .logo .logoText {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  cursor: pointer;
 }
 .footer .footerInfo {
   display: flex;
@@ -583,6 +582,7 @@ header .headerWrapper .logo .logoText {
   color: #fff;
   font-weight: 500;
   line-height: 132%;
+  font-style: italic;
 }
 
 .footerSubtitle {
@@ -626,13 +626,13 @@ header .headerWrapper .logo .logoText {
 
 .iconList {
   display: flex;
+  gap: 15px;
 }
 .iconList li {
   list-style: none;
 }
 .iconList li a {
   text-decoration: none;
-  margin: 0 15px 0 0;
   display: flex;
 }
 
@@ -682,8 +682,9 @@ header .headerWrapper .logo .logoText {
 }
 @media (max-width: 910px) {
   .footer {
-    min-height: 40vh;
-    background-position-x: 92%;
+    min-height: 663px;
+    background-position-x: 90%;
+    position: relative;
   }
   .footer .footerInfo {
     width: 100%;
@@ -695,6 +696,8 @@ header .headerWrapper .logo .logoText {
     width: 55%;
   }
   .footer .copyright {
+    position: absolute;
+    bottom: 30px;
     font-size: 14px;
   }
   .footerSubtitle {
@@ -712,17 +715,12 @@ header .headerWrapper .logo .logoText {
   }
   .iconList {
     margin-top: 22px;
-  }
-  .iconList li a {
-    margin: 0 28px 0 0;
+    gap: 28px;
   }
 }
 @media (max-width: 755px) {
   .footer {
     background-image: image-set(url("../img/footerMobile.webp") 1x, url("../img/footerMobileRetina.webp") 2x);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
   }
 }
 @media (max-width: 600px) {
@@ -733,16 +731,14 @@ header .headerWrapper .logo .logoText {
 @media (max-width: 540px) {
   .footer {
     position: relative;
-    min-height: 85vh;
-    background-position-y: 95%;
+    background-position-y: 100%;
   }
   .footer .footerInfo .footerText {
     width: 100%;
     font-size: 18px;
   }
   .footer .copyright {
-    position: absolute;
-    bottom: 12px;
+    bottom: 17px;
   }
   .footerSubtitle {
     font-size: 18px;
@@ -761,15 +757,9 @@ header .headerWrapper .logo .logoText {
     font-size: 16px;
   }
 }
-@media (max-width: 470px) {
-  .footer {
-    min-height: 75vh;
-    background-position-y: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .footer {
-    min-height: 90vh;
+@media (max-width: 500px) {
+  .footer .copyright {
+    bottom: 12px;
   }
 }
 .hero {

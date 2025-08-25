@@ -12,7 +12,6 @@
     color: #fff;
     font-size: 18px;
     font-weight: 400;
-    cursor: pointer;
   }
   .footerInfo {
     display: flex;
@@ -26,6 +25,7 @@
       color: #fff;
       font-weight: 500;
       line-height: 132%;
+      font-style: italic;
     }
   }
 }
@@ -72,11 +72,11 @@
 
 .iconList {
   display: flex;
+  gap: 15px;
   li {
     list-style: none;
     a {
       text-decoration: none;
-      margin: 0 15px 0 0;
       display: flex;
     }
   }
@@ -133,8 +133,9 @@
 
 @media (max-width: 910px) {
   .footer {
-    min-height: 40vh;
-    background-position-x: 92%;
+    min-height: 663px;
+    background-position-x: 90%;
+    position: relative;
     .footerInfo {
       width: 100%;
       padding: 35px 0 50px 0;
@@ -145,6 +146,8 @@
       }
     }
     .copyright {
+      position: absolute;
+      bottom: 30px;
       font-size: 14px;
     }
   }
@@ -165,11 +168,7 @@
   }
   .iconList {
     margin-top: 22px;
-    li {
-      a {
-        margin: 0 28px 0 0;
-      }
-    }
+    gap: 28px;
   }
 }
 
@@ -179,9 +178,6 @@
       url("../img/footerMobile.webp") 1x,
       url("../img/footerMobileRetina.webp") 2x
     );
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
   }
 }
 
@@ -198,8 +194,7 @@
 @media (max-width: 540px) {
   .footer {
     position: relative;
-    min-height: 85vh;
-    background-position-y: 95%;
+    background-position-y: 100%;
     .footerInfo {
       .footerText {
         width: 100%;
@@ -207,8 +202,7 @@
       }
     }
     .copyright {
-      position: absolute;
-      bottom: 12px;
+      bottom: 17px;
     }
   }
   .footerSubtitle {
@@ -230,16 +224,10 @@
     }
   }
 }
-
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .footer {
-    min-height: 75vh;
-    background-position-y: 100%;
-  }
-}
-
-@media (max-width: 375px) {
-  .footer {
-    min-height: 90vh;
+    .copyright {
+      bottom: 12px;
+    }
   }
 }
