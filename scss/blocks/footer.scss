@@ -135,7 +135,12 @@
   .footer {
     min-height: 663px;
     background-position-x: 90%;
-    position: relative;
+    .footerModificator {
+      display: flex;
+      flex-direction: column;
+      min-height: inherit;
+      justify-content: space-between;
+    }
     .footerInfo {
       width: 100%;
       padding: 35px 0 50px 0;
@@ -146,8 +151,6 @@
       }
     }
     .copyright {
-      position: absolute;
-      bottom: 30px;
       font-size: 14px;
     }
   }
@@ -193,16 +196,13 @@
 
 @media (max-width: 540px) {
   .footer {
-    position: relative;
+    padding-bottom: 20px;
     background-position-y: 100%;
     .footerInfo {
       .footerText {
         width: 100%;
         font-size: 18px;
       }
-    }
-    .copyright {
-      bottom: 17px;
     }
   }
   .footerSubtitle {
@@ -226,8 +226,6 @@
 }
 @media (max-width: 500px) {
   .footer {
-    .copyright {
-      bottom: 12px;
-    }
+    padding-bottom: 12px;
   }
 }
