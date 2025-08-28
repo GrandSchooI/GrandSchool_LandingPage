@@ -1,8 +1,4 @@
 .footer {
-  background-image: -webkit-image-set(
-    url("../img/footerbg.webp") 1x,
-    url("../img/footerbgretina.webp") 2x
-  );
   background-image: image-set(
     url("../img/footerbg.webp") 1x,
     url("../img/footerbgretina.webp") 2x
@@ -16,7 +12,6 @@
     color: #fff;
     font-size: 18px;
     font-weight: 400;
-    cursor: pointer;
   }
   .footerInfo {
     display: flex;
@@ -30,6 +25,7 @@
       color: #fff;
       font-weight: 500;
       line-height: 132%;
+      font-style: italic;
     }
   }
 }
@@ -76,11 +72,11 @@
 
 .iconList {
   display: flex;
+  gap: 15px;
   li {
     list-style: none;
     a {
       text-decoration: none;
-      margin: 0 15px 0 0;
       display: flex;
     }
   }
@@ -105,5 +101,131 @@
   height: 46px;
   &:hover {
     fill: #b2b2b2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    .footerInfo {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    .footerInfo {
+      width: 77%;
+      .footerText {
+        font-size: 16px;
+      }
+    }
+    .copyright {
+      font-size: 16px;
+    }
+  }
+  .contact {
+    .contactInfo {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .footer {
+    min-height: 663px;
+    background-position-x: 90%;
+    .respFooterWrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: inherit;
+      justify-content: space-between;
+    }
+    .footerInfo {
+      width: 100%;
+      padding: 35px 0 50px 0;
+      flex-direction: column;
+      .footerText {
+        font-size: 22px;
+        width: 55%;
+      }
+    }
+    .copyright {
+      font-size: 14px;
+    }
+  }
+  .footerSubtitle {
+    margin: 44px 0 35px 0;
+    font-size: 20px;
+  }
+  .contact {
+    .contactInfo {
+      font-size: 18px;
+    }
+    .emailLink {
+      font-size: 18px;
+    }
+  }
+  .hideTitle {
+    display: none;
+  }
+  .iconList {
+    margin-top: 22px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 755px) {
+  .footer {
+    background-image: image-set(
+      url("../img/footerMobile.webp") 1x,
+      url("../img/footerMobileRetina.webp") 2x
+    );
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    .footerInfo {
+      .footerText {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+    padding-bottom: 20px;
+    background-position-y: 100%;
+    .footerInfo {
+      .footerText {
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+  }
+  .footerSubtitle {
+    font-size: 18px;
+    margin: 44px 0 12px 0;
+    &::before {
+      display: none;
+    }
+  }
+  .hiddenTitle {
+    display: none;
+  }
+  .contact {
+    .contactInfo {
+      font-size: 16px;
+    }
+    .emailLink {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding-bottom: 12px;
   }
 }
