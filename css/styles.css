@@ -685,7 +685,7 @@ header .headerWrapper .logo .logoText {
     min-height: 663px;
     background-position-x: 90%;
   }
-  .footer .footerModificator {
+  .footer .respFooterWrapper {
     display: flex;
     flex-direction: column;
     min-height: inherit;
