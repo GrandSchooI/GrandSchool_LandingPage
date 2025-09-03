@@ -972,15 +972,6 @@ header .headerWrapper .logo .logoText {
   font-weight: 600;
 }
 
-@media (max-width: 1080px) {
-  .supportList {
-    align-items: center;
-    flex-direction: column;
-  }
-  .supportList li {
-    width: 60%;
-  }
-}
 @media (max-width: 768px) {
   .projectSupport h2 {
     font-size: 30px;

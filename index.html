@@ -384,13 +384,13 @@
       </section>
       <section class="video" id="video"></section> -->
       <section class="projectSupport" id="projectSupport">
-        <div class="container">
+        <div class="container swiper">
           <h2>
             Wesprzyj nasz project,
             <span class="supportGreenTitle">a twoi bliscy otrzymają:</span>
           </h2>
-          <ul class="supportList">
-            <li>
+          <ul class="supportList swiper-wrapper">
+            <li class="swiper-slide">
               <svg width="90" height="90">
                 <use xlink:href="sprite.svg#firstSupportIcon"></use>
               </svg>
@@ -404,7 +404,7 @@
                 wsparcia i ciepłego kontaktu.
               </p>
             </li>
-            <li>
+            <li class="swiper-slide">
               <svg width="90" height="90">
                 <use xlink:href="sprite.svg#secondSupportIcon"></use>
               </svg>
@@ -419,7 +419,7 @@
                 siebie i samodzielności.
               </p>
             </li>
-            <li>
+            <li class="swiper-slide">
               <svg width="90" height="90">
                 <use xlink:href="sprite.svg#thirdSupportIcon"></use>
               </svg>
@@ -434,6 +434,7 @@
               </p>
             </li>
           </ul>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="feelings" id="feelings">
@@ -571,5 +572,6 @@
         </div>
       </footer>
     </main>
+    <script type="module" src="js/swiper.js"></script>
   </body>
 </html>
