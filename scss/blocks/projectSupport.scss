@@ -1,7 +1,7 @@
 .projectSupport {
   background-image: image-set(
-    url("../img/supportVector1.webp") 1x,
-    url("../img/supportVector1Retina.webp") 3x
+    url('../../img/supportVector1.webp') 1x,
+    url('../../img/supportVector1Retina.webp') 3x
   );
   background-repeat: no-repeat;
   background-size: contain;
@@ -49,6 +49,27 @@
     strong {
       font-weight: 600;
     }
+  }
+}
+
+.projectSupport {
+  .projectSupport__desktop img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .projectSupport__slider {
+    margin-top: 16px;
+    .splide__slide {
+      padding: 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.04);
+      text-align: left;
+    }
+    .splide__slide h3 { margin: 8px 0; font-size: 20px; line-height: 1.2; }
+    .splide__slide p { margin: 0; line-height: 1.5; }
   }
 }
 
