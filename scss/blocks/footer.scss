@@ -1,5 +1,8 @@
 .footer {
-  background-image: image-set(url('../../img/footerbg.webp') 1x, url('../../img/footerbgretina.webp') 2x);
+  background-image: image-set(
+    url('../../img/footerbg.webp') 1x,
+    url('../../img/footerbgretina.webp') 2x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 30%;

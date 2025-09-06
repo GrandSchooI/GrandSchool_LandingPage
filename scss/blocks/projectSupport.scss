@@ -68,8 +68,15 @@
       background: rgba(255, 255, 255, 0.04);
       text-align: left;
     }
-    .splide__slide h3 { margin: 8px 0; font-size: 20px; line-height: 1.2; }
-    .splide__slide p { margin: 0; line-height: 1.5; }
+    .splide__slide h3 {
+      margin: 8px 0;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    .splide__slide p {
+      margin: 0;
+      line-height: 1.5;
+    }
   }
 }
 

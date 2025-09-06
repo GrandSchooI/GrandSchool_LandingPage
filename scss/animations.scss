@@ -1,12 +1,22 @@
 /* Animation */
 @keyframes blink-1 {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: .2; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 
 @-webkit-keyframes blink-1 {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: .2; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 @keyframes fadeIn {
   0% {
