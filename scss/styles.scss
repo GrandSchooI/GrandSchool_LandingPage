@@ -1,7 +1,7 @@
 @use 'mixins';
 @use 'normalize';
 @use 'scaffolding';
-@use 'animations';
+@use 'animations' as *;
 
 @use 'blocks/header';
 @use 'blocks/footer';
