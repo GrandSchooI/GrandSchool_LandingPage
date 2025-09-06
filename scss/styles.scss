@@ -1,13 +1,15 @@
-@import "mixins";
-@import "normalize";
-@import "scaffolding";
-@import "animations";
-@import "blocks/header";
-@import "blocks/footer";
-@import "blocks/hero";
-@import "blocks/courses";
-@import "blocks/projectSupport";
-@import "blocks/projectStats";
-@import "blocks/video";
-@import "blocks/feelingSection";
-@import "blocks/testimonials";
+@use 'mixins';
+@use 'normalize';
+@use 'scaffolding';
+@use 'animations' as *;
+
+@use 'blocks/header';
+@use 'blocks/footer';
+@use 'blocks/hero';
+@use 'blocks/courses';
+@use 'blocks/projectSupport';
+@use 'blocks/projectStats';
+@use 'blocks/slider';
+@use 'blocks/video';
+@use 'blocks/feelings';
+@use 'blocks/testimonials';
