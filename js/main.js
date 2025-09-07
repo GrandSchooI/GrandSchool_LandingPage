@@ -10,9 +10,7 @@ function mountSplideFor(el) {
   const PEEK = 56;
   const slider = new Splide(el, {
     type: 'loop',
-    boxShadow: `0 4px 12px rgba(0, 0, 0, 0.08)`,
-    autoplay: true,
-    interval: 3000,
+    autoplay: false,
     pauseOnHover: true,
     arrows: false,
     pagination: true,
@@ -44,7 +42,7 @@ function destroySplideFor(el) {
   }
 }
 function applyMobileOnlySliders() {
-  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+  const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
   const nodes = document.querySelectorAll('.splide[data-mobile-only]');
 
   nodes.forEach((el) => {
