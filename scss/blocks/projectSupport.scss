@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0;
+  padding: 100px 0 200px 0;
   h2 {
     font-size: 36px;
     font-weight: 600;
@@ -52,39 +52,30 @@
   }
 }
 
-.projectSupport {
-  .projectSupport__desktop img {
-    display: block;
+.projectSupport__slider {
+  margin-top: 16px;
+  .splide__slide {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
+    margin: 28px 0 28px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: left;
   }
-
-  .projectSupport__slider {
-    margin-top: 16px;
-    .splide__slide {
-      width: 100%;
-      margin: 28px 0 28px 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      padding: 16px;
-      border-radius: 10px;
-      text-align: left;
-    }
-    .splide__slide h3 {
-      margin: 28px 0 24px 0;
-      font-size: 24px;
-      line-height: 1.2;
-    }
-    .splide__slide p {
-      font-size: 18px;
-      line-height: 1.5;
-    }
+  .splide__slide h3 {
+    margin: 28px 0 24px 0;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .splide__slide p {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .projectSupport {
-    padding: 140px 0;
+    padding: 70px 0;
     background: white;
     h2 {
       font-size: 30px;
