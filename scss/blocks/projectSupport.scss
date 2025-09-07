@@ -63,18 +63,20 @@
   .projectSupport__slider {
     margin-top: 16px;
     .splide__slide {
+      width: 100%;
+      margin: 28px 0 28px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 16px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.04);
+      border-radius: 10px;
       text-align: left;
     }
     .splide__slide h3 {
-      margin: 8px 0;
-      font-size: 20px;
+      margin: 28px 0 24px 0;
+      font-size: 24px;
       line-height: 1.2;
     }
     .splide__slide p {
-      margin: 0;
+      font-size: 18px;
       line-height: 1.5;
     }
   }
@@ -82,13 +84,14 @@
 
 @media (max-width: 768px) {
   .projectSupport {
+    padding: 140px 0;
+    background: white;
     h2 {
       font-size: 30px;
     }
   }
   .supportList {
     li {
-      width: 100%;
       h3 {
         font-weight: 700;
       }

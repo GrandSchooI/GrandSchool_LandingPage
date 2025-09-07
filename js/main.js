@@ -3,13 +3,14 @@ import Splide from '@splidejs/splide';
 import '@splidejs/splide/css/core';
 import '../scss/styles.scss';
 
-const MOBILE_BREAKPOINT = 768;
+const MOBILE_BREAKPOINT = 1024;
 let splideInstances = new Map();
 function mountSplideFor(el) {
   if (splideInstances.has(el)) return;
   const PEEK = 56;
   const slider = new Splide(el, {
     type: 'loop',
+    boxShadow: `0 4px 12px rgba(0, 0, 0, 0.08)`,
     autoplay: true,
     interval: 3000,
     pauseOnHover: true,
@@ -18,9 +19,8 @@ function mountSplideFor(el) {
     keyboard: 'global',
     drag: true,
     speed: 600,
-    fixedWidth: `calc(100% - ${PEEK}px)`, // ширина карточки меньше контейнера
+    fixedWidth: `calc(100% - ${PEEK}px)`,
     gap: '16px',
-    padding: { left: '16px', right: '16px' },
     focus: 'left',
     trimSpace: false,
     waitForTransition: true,
@@ -44,7 +44,7 @@ function destroySplideFor(el) {
   }
 }
 function applyMobileOnlySliders() {
-  const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
   const nodes = document.querySelectorAll('.splide[data-mobile-only]');
 
   nodes.forEach((el) => {
