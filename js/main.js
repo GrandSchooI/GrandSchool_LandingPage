@@ -42,7 +42,7 @@ function destroySplideFor(el) {
   }
 }
 function applyMobileOnlySliders() {
-  const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
   const nodes = document.querySelectorAll('.splide[data-mobile-only]');
 
   nodes.forEach((el) => {
