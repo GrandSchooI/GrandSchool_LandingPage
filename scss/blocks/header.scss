@@ -1,10 +1,13 @@
+@use '../mixins' as mixins;
+
 header {
+  z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
   .headerWrapper {
     padding-top: 35px;
-    @include flex;
+    @include mixins.flex;
     .logo {
       display: flex;
       align-items: center;
@@ -29,7 +32,7 @@ header {
 }
 
 .primaryBtn {
-  @include btnSettings;
+  @include mixins.btnSettings;
   position: relative;
   font-size: 20px;
   min-width: 200px;
@@ -40,10 +43,10 @@ header {
   span {
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
-      width: 0%;
+      width: 0;
       top: 18px;
       height: 1px;
       transition: all 0.3s ease;
@@ -64,8 +67,8 @@ header {
     background-color: #517322;
     border: 2px solid #618135;
     span::after {
-      transform: skaleX(0);
-      width: 0%;
+      transform: scaleX(0);
+      width: 0;
     }
   }
 }

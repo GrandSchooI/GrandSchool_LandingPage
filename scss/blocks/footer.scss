@@ -1,7 +1,7 @@
 .footer {
   background-image: image-set(
-    url("../img/footerbg.webp") 1x,
-    url("../img/footerbgretina.webp") 2x
+    url('../../img/footerbg.webp') 1x,
+    url('../../img/footerbgretina.webp') 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@
   position: relative;
   margin-bottom: 35px;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 44px;
     height: 2px;
@@ -178,8 +178,8 @@
 @media (max-width: 755px) {
   .footer {
     background-image: image-set(
-      url("../img/footerMobile.webp") 1x,
-      url("../img/footerMobileRetina.webp") 2x
+      url('../../img/footerMobile.webp') 1x,
+      url('../../img/footerMobileRetina.webp') 2x
     );
   }
 }
