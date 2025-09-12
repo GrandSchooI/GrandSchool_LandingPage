@@ -67,14 +67,13 @@
 @media (max-width: 1024px) {
   .testimonials {
     background-image: image-set(
-      url('../../img/testimonials.png') 1x,
-      url('../../img/testimonialsRetina.png') 2x
+      url('../../img/testimonials.webp') 1x,
+      url('../../img/testimonialsRetina.webp') 2x
     );
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: top;
-    padding: 115px 0 70px 0;
+    background-size: contain;
+    padding: 230px 0 70px 0;
     h2 {
       margin-bottom: 6px;
     }
