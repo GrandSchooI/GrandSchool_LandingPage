@@ -300,73 +300,166 @@
         </div>
       </section>
       <section class="courses" id="courses"></section>
-      <!-- <section class="testimonials" id="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="container">
           <h2>Doświadczenie grupy testowej</h2>
           <svg class="fullLogo" width="163" height="63">
             <use xlink:href="sprite.svg#fullLogo"></use>
           </svg>
-          <ul class="testimonialsList">
-            <li>
-              <figure>
-                <svg width="72" height="72">
-                  <use xlink:href="sprite.svg#figures"></use>
-                </svg>
-                <blockquote class="testimonialsText">
-                  Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
-                  społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
-                  informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
-                </blockquote>
-                <figcaption class="testimonialsUsers">
-                  <img src="img/user1.webp" alt="Photo of Mateusz Zieliński" />
-                  <strong>
-                    Mateusz Zieliński
-                    <span>65 lat</span>
-                  </strong>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <svg width="72" height="72">
-                  <use xlink:href="sprite.svg#figures"></use>
-                </svg>
-                <blockquote class="testimonialsText">
-                  Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
-                  społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
-                  informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
-                </blockquote>
-                <figcaption class="testimonialsUsers">
-                  <img src="img/user2.webp" alt="Photo of Joanna Krawczyk" />
-                  <strong>
-                    Joanna Krawczyk
-                    <span>74 lata</span>
-                  </strong>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <svg width="72" height="72">
-                  <use xlink:href="sprite.svg#figures"></use>
-                </svg>
-                <blockquote class="testimonialsText">
-                  Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
-                  społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
-                  informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
-                </blockquote>
-                <figcaption class="testimonialsUsers">
-                  <img src="img/user3.webp" alt="Photo of Piotr Jankowski" />
-                  <strong>
-                    Piotr Jankowski
-                    <span>69 lat</span>
-                  </strong>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
+          <div class="projectSupport__desktop only-desktop" aria-hidden="true">
+            <ul class="testimonialsList">
+              <li>
+                <figure>
+                  <svg width="72" height="72">
+                    <use xlink:href="sprite.svg#figures"></use>
+                  </svg>
+                  <blockquote class="testimonialsText">
+                    Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                    społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                    informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                  </blockquote>
+                  <figcaption class="testimonialsUsers">
+                    <picture>
+                      <source srcset="img/user1.avif" type="image/avif" />
+                      <source srcset="img/user1.webp" type="image/webp" />
+                      <img src="img/user1.png" alt="Photo of Mateusz Zieliński" loading="lazy" />
+                    </picture>
+                    <strong>
+                      Mateusz Zieliński
+                      <span>65 lat</span>
+                    </strong>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <svg width="72" height="72">
+                    <use xlink:href="sprite.svg#figures"></use>
+                  </svg>
+                  <blockquote class="testimonialsText">
+                    Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                    społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                    informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                  </blockquote>
+                  <figcaption class="testimonialsUsers">
+                    <picture>
+                      <source srcset="img/user2.avif" type="image/avif" />
+                      <source srcset="img/user2.webp" type="image/webp" />
+                      <img src="img/user2.png" alt="Photo of Joanna Krawczyk" loading="lazy" />
+                    </picture>
+                    <strong>
+                      Joanna Krawczyk
+                      <span>74 lata</span>
+                    </strong>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <svg width="72" height="72">
+                    <use xlink:href="sprite.svg#figures"></use>
+                  </svg>
+                  <blockquote class="testimonialsText">
+                    Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                    społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                    informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                  </blockquote>
+                  <figcaption class="testimonialsUsers">
+                    <picture>
+                      <source srcset="img/user3.avif" type="image/avif" />
+                      <source srcset="img/user3.webp" type="image/webp" />
+                      <img src="img/user3.png" alt="Photo of Piotr Jankowski" loading="lazy" />
+                    </picture>
+                    <strong>
+                      Piotr Jankowski
+                      <span>69 lat</span>
+                    </strong>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="projectSupport__slider splide only-mobile"
+            data-mobile-only
+            aria-label="Co otrzymają bliscy"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <figure>
+                    <svg width="72" height="72">
+                      <use xlink:href="sprite.svg#figures"></use>
+                    </svg>
+                    <blockquote class="testimonialsText">
+                      Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                      społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                      informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                    </blockquote>
+                    <figcaption class="testimonialsUsers">
+                      <picture>
+                        <source srcset="img/user1.avif" type="image/avif" />
+                        <source srcset="img/user1.webp" type="image/webp" />
+                        <img src="img/user1.png" alt="Photo of Mateusz Zieliński" loading="lazy" />
+                      </picture>
+                      <strong>
+                        Mateusz Zieliński
+                        <span>65 lat</span>
+                      </strong>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="splide__slide">
+                  <figure>
+                    <svg width="72" height="72">
+                      <use xlink:href="sprite.svg#figures"></use>
+                    </svg>
+                    <blockquote class="testimonialsText">
+                      Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                      społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                      informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                    </blockquote>
+                    <figcaption class="testimonialsUsers">
+                      <picture>
+                        <source srcset="img/user2.avif" type="image/avif" />
+                        <source srcset="img/user2.webp" type="image/webp" />
+                        <img src="img/user2.png" alt="Photo of Joanna Krawczyk" loading="lazy" />
+                      </picture>
+                      <strong>
+                        Joanna Krawczyk
+                        <span>74 lata</span>
+                      </strong>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="splide__slide">
+                  <figure>
+                    <svg width="72" height="72">
+                      <use xlink:href="sprite.svg#figures"></use>
+                    </svg>
+                    <blockquote class="testimonialsText">
+                      Powstanie kursu podyktowane zostało nowymi wyzwaniami stawianymi przez
+                      społeczeństwo - osobom starszym, którym brak podstawowej wiedzy z zakresu
+                      informatyki trudno o swobodną asymilacje ze społeczeństwem, co prowadzi.
+                    </blockquote>
+                    <figcaption class="testimonialsUsers">
+                      <picture>
+                        <source srcset="img/user3.avif" type="image/avif" />
+                        <source srcset="img/user3.webp" type="image/webp" />
+                        <img src="img/user3.png" alt="Photo of Piotr Jankowski" loading="lazy" />
+                      </picture>
+                      <strong>
+                        Piotr Jankowski
+                        <span>69 lat</span>
+                      </strong>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section> -->
+      </section>
       <section class="video" id="video"></section>
       <section class="projectSupport" id="projectSupport">
         <div class="container">
