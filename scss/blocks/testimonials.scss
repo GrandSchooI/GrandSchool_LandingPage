@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 45px 0 100px 0;
+  padding: 69px 0 100px 0;
   background-color: #f7f5ec;
   h2 {
     font-size: 36px;
@@ -73,12 +73,14 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 230px 0 70px 0;
+    background-position-y: -120px;
+    padding: 115px 0 70px 0;
     h2 {
       margin-bottom: 6px;
     }
   }
   .splide__slide {
+    background-color: #fff;
     .testimonialsText {
       font-size: 20px;
     }
@@ -94,6 +96,21 @@
   .splide__slide {
     .testimonialsText {
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonials {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 415px) {
+  .testimonials {
+    h2 {
+      font-size: 26px;
     }
   }
 }
