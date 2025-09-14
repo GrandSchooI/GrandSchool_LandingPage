@@ -72,8 +72,8 @@
     );
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: -120px;
+    background-size: cover;
+    background-position-y: -350px;
     padding: 115px 0 70px 0;
     h2 {
       margin-bottom: 6px;
@@ -87,8 +87,9 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .testimonials {
+    background-size: contain;
     h2 {
       font-size: 30px;
     }
@@ -97,6 +98,11 @@
     .testimonialsText {
       font-size: 16px;
     }
+  }
+}
+@media (max-width: 540px) {
+  .testimonials {
+    background-position-y: -120px;
   }
 }
 
@@ -111,6 +117,14 @@
   .testimonials {
     h2 {
       font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .testimonials {
+    h2 {
+      font-size: 24px;
     }
   }
 }
