@@ -73,6 +73,8 @@ body {
 
 .only-mobile {
   display: block;
+  max-width: 100%;
+  padding-left: 15px;
 }
 .only-desktop {
   display: none;
