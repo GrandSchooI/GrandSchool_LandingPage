@@ -74,7 +74,8 @@ body {
 .only-mobile {
   display: block;
   max-width: 100%;
-  padding-left: 15px;
+  padding-left: 9px;
+  overflow: visible;
 }
 .only-desktop {
   display: none;
