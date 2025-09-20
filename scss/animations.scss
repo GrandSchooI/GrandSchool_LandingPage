@@ -101,15 +101,15 @@
   }
   25% {
     transform: translateX(-2px);
-    fill: red;
+    fill: rgb(182, 11, 11);
   }
   50% {
     transform: translateX(2px);
-    fill: red;
+    fill: rgb(182, 11, 11);
   }
   75% {
     transform: translateX(-2px);
-    fill: red;
+    fill: rgb(182, 11, 11);
   }
 }
 .shake {
@@ -135,13 +135,13 @@
 }
 
 @keyframes fadeToBlackAndBack {
-  50% {
-    fill: black; /* к 75% черный */
+  55% {
+    fill: rgb(20, 16, 16); /* к 75% черный */
   }
 }
 
 .mask {
-  animation: fadeToBlackAndBack 3s infinite ease;
+  animation: fadeToBlackAndBack 4s infinite ease-in-out;
 }
 
 @keyframes jumpAndSpin {
@@ -166,4 +166,35 @@
   animation: jumpAndSpin 4s ease infinite;
   transform-origin: 50% 50%; /* вращение вокруг центра */
   display: inline-block;
+}
+
+@keyframes eyeBlink {
+  0% {
+    transform: scaleY(0);
+    fill: none;
+  } /* открыто */
+  20% {
+    transform: scaleY(1);
+    fill: none;
+  } /* мягкое закрытие */
+  30% {
+    transform: scaleY(1);
+    fill: #618135;
+  } /* задержка в закрытом состоянии */
+  35% {
+    transform: scaleY(1);
+    fill: #618135;
+  } /* мягкое открытие */
+  38% {
+    transform: scaleY(0);
+    fill: none;
+  }
+  100% {
+    transform: scaleY(0);
+    fill: none;
+  }
+}
+.eye {
+  animation: eyeBlink 5s ease-in-out infinite;
+  transform-origin: center top;
 }
