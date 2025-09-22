@@ -30,9 +30,27 @@
     gap: 34px;
     padding-top: 32px;
     li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
       width: 33%;
       background-color: #fff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      h3 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        small {
+          font-size: 34px;
+        }
+      }
+      p {
+        color: #618135;
+        font-size: 18px;
+        font-weight: 700;
+      }
     }
   }
 }
