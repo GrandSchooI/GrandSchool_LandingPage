@@ -54,3 +54,45 @@
     }
   }
 }
+
+@media (max-width: 1020px) {
+  .projectStats {
+    p {
+      text-align: center;
+    }
+    .stats-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+    .statsList {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      li {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .projectStats {
+    background: white;
+    p {
+      text-align: left;
+    }
+    .statsList {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .projectStats {
+    p {
+      width: 85%;
+    }
+  }
+}
