@@ -1,0 +1,39 @@
+.projectStats {
+  padding: 86px 0 140px 0;
+  background-image: image-set(
+    url('../../img/projectStatsBG.webp') 1x,
+    url('../../img/projectStatsBGRetina.webp') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .stats-cta {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #484747;
+    }
+  }
+  .statsList {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding-top: 32px;
+    li {
+      width: 33%;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
