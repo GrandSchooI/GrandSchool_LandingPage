@@ -1,41 +1,39 @@
-const counters = document.querySelectorAll('.counter');
+function animateCounter(el, duration = 1000) {
+  const target = +el.getAttribute('data-target');
+  const start = 0;
+  const startTime = performance.now();
 
-// Наблюдаем за целой секцией
-const section = document.querySelector('.projectStats');
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const currentValue = Math.floor(progress * target);
+    el.textContent = currentValue;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = target;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+const counters = document.querySelectorAll('.counter');
+let started = false;
 
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Когда секция появилась — запускаем анимации
-        counters.forEach((counter) => {
-          const target = +counter.getAttribute('data-num');
-          animateCounter(counter, Number);
-        });
-
-        // Больше не следим
-        observer.unobserve(entry.Number);
+      if (entry.isIntersecting && !started) {
+        started = true;
+        counters.forEach((counter) => animateCounter(counter, 700));
+        observer.disconnect();
       }
     });
   },
-  {
-    threshold: 0.3, // 30% секции в экране
-  },
+  { threshold: 0.5 },
 );
 
-observer.observe(section);
-
-function animateCounter(counter, Number) {
-  let current = 0;
-  const increment = Number / 100;
-
-  const interval = setInterval(() => {
-    current += increment;
-    if (current >= Number) {
-      counter.innerText = Number;
-      clearInterval(interval);
-    } else {
-      counter.innerText = Math.round(current);
-    }
-  }, 10);
-}
+const statsSection = document.getElementById('projectStats');
+observer.observe(statsSection);
