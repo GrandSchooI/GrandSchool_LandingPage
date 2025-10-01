@@ -39,6 +39,10 @@
       width: 33%;
       background-color: #fff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      &:hover svg {
+        transform: scale(0.8);
+        transition: all 0.7s ease;
+      }
       h3 {
         margin: 0;
         font-size: 34px;
