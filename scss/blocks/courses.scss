@@ -375,3 +375,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .courses {
+    display: none;
+  }
+}
